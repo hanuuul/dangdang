@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+        <link rel="stylesheet" href="/static/styles.css">
+    </head>
+
+    <body>
+        <div class="form_wrap">
+            <form method="POST" action="/write">
+                <div class="form_group">
+                    <label for="title">제목</label>
+                    <input type="text" name="title" id="title">
+                </div>
+                <div class="form_group">
+                    <label for="location">지역</label>
+                    <input type="text" name="location" id="location">
+                </div>
+                <div class="form_group">
+                    <label for="price">가격</label>
+                    <input type="text" name="price" id="price">
+                </div>
+                <div class="form_group">
+                    <label for="content">내용</label>
+                    <textarea name="content" id="content" cols="30" rows="10"></textarea>
+                </div>
+                
+                <input type="file" class="custom-file-control" id="image" name="image">
+    
+                <div class="btns">
+                    <button type="submit" class="btn btn-primary">등록</button>
+                    <a role="button" href="/" class="btn btn-secondary">취소</a>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
